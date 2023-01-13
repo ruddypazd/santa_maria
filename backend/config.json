@@ -1,0 +1,14 @@
+{
+    "name":"santa_maria",
+    "httpServer":{
+        "ip":"localhost",
+        "port":8001
+    },
+    "bdPostgres":{
+        "ip":"172.168.0.14",
+        "puerto":5432,
+        "bd_name":"santa_maria",
+        "user":"postgres",
+        "pass":"oracle123"
+    }
+}
