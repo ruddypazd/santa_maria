@@ -14,7 +14,7 @@ const pintarDeptos= async()=>{
 
 const cardDepto=(depto)=>{
     let cuerpo = "";
-    cuerpo += "<div class='border1 button btnprimary-alt' style='margin: 5px; min-width:140px;'>";
+    cuerpo += "<div class='border1 button btnprimary-alt' style='margin: 5px; width:140px;'>";
     cuerpo += "<div class='top10'># "+depto.descripcion+"</div>";
     cuerpo += "<div class='top10'>"+(depto.propietario || "Sin identificar")+"</div>";
     cuerpo += "<div class='top10'>"+(depto.mora || "Bs. 0,00")+"</div>";
@@ -28,7 +28,7 @@ const getDeptos=()=>{
         type:"getAll",
     };
     return new Promise(resolve => {
-        fetch("http://172.168.0.14:8001/", {
+        fetch("https://santamaria.ruddypazd.com", {
             method: 'post',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: JSON.stringify(obj)
